@@ -121,51 +121,112 @@ namespace Desempeño
             Txt_PCS.Text = PCS.ToString();
         }
 
-        public int totalProducticidad = 0;
-        private void Nud_productividadMDE_ValueChanged(object sender, EventArgs e)
+        decimal TotProductividad = 0;
+
+        decimal prodMDE;
+        decimal prodDE;
+        decimal prodAE;
+        decimal prodME;
+        decimal prodS;
+
+        public void regularProductividad()
         {
-         /*   if(Nud_productividadMDE.Increment = true)
+            TotProductividad = Nud_productividadDE.Value +
+                    Nud_productividadAE.Value +
+                    Nud_productividadME.Value +
+                    Nud_productividadS.Value +
+                    Nud_productividadMDE.Value;
+
+            if (TotProductividad == 3)
             {
-                TotalP = totalProducticidad + Nud_productividadMDE.value;
+                // guardar datos actuales
+                prodDE = Nud_productividadDE.Value;
+                prodAE = Nud_productividadAE.Value;
+                prodME = Nud_productividadME.Value;
+                prodS = Nud_productividadS.Value;
+                prodMDE = Nud_productividadMDE.Value;
             }
-            else
+            else if (TotProductividad < 3)
             {
-                TotalP = totalProducticidad - (3 - Nud_productividadMDE.value);
-            };
-            */
-            if (Nud_productividadMDE.Value==3)
-            {
-                Nud_productividadDE.Enabled = false;
-                Nud_productividadAE.Enabled = false;
-                Nud_productividadME.Enabled = false;
-                Nud_productividadS.Enabled = false;
+
             }
-            else
+            else if (TotProductividad > 3)
             {
-                Nud_productividadDE.Enabled = true;
-                Nud_productividadAE.Enabled = true;
-                Nud_productividadME.Enabled = true;
-                Nud_productividadS.Enabled = true;
+                Nud_productividadDE.Value = prodDE;
+                Nud_productividadAE.Value = prodAE;
+                Nud_productividadME.Value = prodME;
+                Nud_productividadS.Value = prodS;
+                Nud_productividadMDE.Value = prodMDE;
+
             }
         }
 
-        private void Nud_productividadDE_ValueChanged(object sender, EventArgs e)
-        {
+        decimal TotEficiencia = 0;
 
-            if (Nud_productividadDE.Value == 3)
+        decimal efiMDE;
+        decimal efiDE;
+        decimal efiAE;
+        decimal efiME;
+        decimal efiS;
+
+        public void regularEficiencia()
+        {
+            TotEficiencia = Nud_eficienciaDE.Value +
+                    Nud_eficienciaAE.Value +
+                    Nud_eficienciaME.Value +
+                    Nud_eficienciaS.Value +
+                    Nud_eficienciaMDE.Value;
+
+            if (TotEficiencia == 3)
             {
-                Nud_productividadMDE.Enabled = false;
-                Nud_productividadAE.Enabled = false;
-                Nud_productividadME.Enabled = false;
-                Nud_productividadS.Enabled = false;
+                // guardar datos actuales
+                efiDE = Nud_eficienciaDE.Value;
+                efiAE = Nud_eficienciaAE.Value;
+                efiME = Nud_eficienciaME.Value;
+                efiS = Nud_eficienciaS.Value;
+                efiMDE = Nud_eficienciaMDE.Value;
             }
-            else
+            else if (TotEficiencia < 3)
             {
-                Nud_productividadMDE.Enabled = true;
-                Nud_productividadAE.Enabled = true;
-                Nud_productividadME.Enabled = true;
-                Nud_productividadS.Enabled = true;
+
             }
+            else if (TotEficiencia > 3)
+            {
+                Nud_eficienciaDE.Value = efiDE;
+                Nud_eficienciaAE.Value = efiAE;
+                Nud_eficienciaME.Value = efiME;
+                Nud_eficienciaS.Value = efiS;
+                Nud_eficienciaMDE.Value = efiMDE;
+
+            }
+        }
+
+        private void Nud_productividadAE_ValueChanged(object sender, EventArgs e)
+        {
+         regularProductividad();
+            sumaTC();
+
+        }
+
+        public void sumaTC()
+        {
+            decimal sumaMDE = Nud_productividadMDE.Value + Nud_eficienciaMDE.Value + Nud_organizacionMDE.Value + 
+                Nud_aprendizajeydesarrolloMDE.Value + Nud_comunicacionMDE.Value + Nud_relacionesinterpersonalesMDE.Value + 
+                Nud_asistenciaMDE.Value;
+            Txt_TCMDE.Text = sumaMDE.ToString();
+
+
+            decimal sumaDE = Nud_productividadDE.Value + Nud_eficienciaDE.Value + Nud_organizacionDE.Value +
+                Nud_aprendizajeydesarrolloDE.Value + Nud_comunicacionDE.Value + Nud_relacionesinterpersonalesDE.Value + 
+                Nud_asistenciaDE.Value;
+            Txt_TCDE.Text = sumaDE.ToString();
+        }
+        
+        private void valorCambiado(object sender, EventArgs e)
+        {
+            regularProductividad();
+            regularEficiencia();
+            sumaTC();
         }
     }
 }

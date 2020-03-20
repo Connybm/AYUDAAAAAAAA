@@ -17,3 +17,13 @@ C:\Users\Conny\Downloads\ElBienestar-Didactico-Conny-Maria\Desempeño\Desempeño
 C:\Users\Conny\Downloads\ElBienestar-Didactico-Conny-Maria\Desempeño\Desempeño\obj\Debug\Desempeño.csproj.CoreCompileInputs.cache
 C:\Users\Conny\Downloads\ElBienestar-Didactico-Conny-Maria\Desempeño\Desempeño\obj\Debug\Desempeño.exe
 C:\Users\Conny\Downloads\ElBienestar-Didactico-Conny-Maria\Desempeño\Desempeño\obj\Debug\Desempeño.pdb
+\\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\bin\Debug\Desempeño.exe.config
+\\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\bin\Debug\Desempeño.exe
+\\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\bin\Debug\Desempeño.pdb
+\\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\obj\Debug\Desempeño.csprojAssemblyReference.cache
+\\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\obj\Debug\Desempeño.Frm_DesempenioEmpleados.resources
+\\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\obj\Debug\Desempeño.Properties.Resources.resources
+\\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\obj\Debug\Desempeño.csproj.GenerateResource.cache
+\\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\obj\Debug\Desempeño.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\obj\Debug\Desempeño.exe
+\\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\obj\Debug\Desempeño.pdb
