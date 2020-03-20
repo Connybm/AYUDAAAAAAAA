@@ -37,3 +37,4 @@ C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de S
 C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\obj\Debug\Desempeño.csproj.CoreCompileInputs.cache
 C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\obj\Debug\Desempeño.exe
 C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\obj\Debug\Desempeño.pdb
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\Segundo Proyecto\Desempeño\Desempeño\obj\Debug\Desempeño.csproj.CoreCompileInputs.cache

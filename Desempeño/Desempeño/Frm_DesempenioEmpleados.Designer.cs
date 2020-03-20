@@ -128,6 +128,7 @@
             this.Nud_relacionesinterpersonalesAE = new System.Windows.Forms.NumericUpDown();
             this.Nud_relacionesinterpersonalesME = new System.Windows.Forms.NumericUpDown();
             this.Nud_relacionesinterpersonalesS = new System.Windows.Forms.NumericUpDown();
+            this.Btn_insertar = new System.Windows.Forms.Button();
             this.Pnl_Desempeño.SuspendLayout();
             this.Gpb_puntaje.SuspendLayout();
             this.Tlp_puntaje.SuspendLayout();
@@ -278,6 +279,7 @@
             this.Tlp_puntaje.Controls.Add(this.Txt_TCME, 3, 4);
             this.Tlp_puntaje.Controls.Add(this.Txt_TCS, 3, 5);
             this.Tlp_puntaje.Controls.Add(this.Txt_totalcategoria, 1, 6);
+            this.Tlp_puntaje.Controls.Add(this.Btn_insertar, 2, 6);
             this.Tlp_puntaje.Location = new System.Drawing.Point(6, 19);
             this.Tlp_puntaje.Name = "Tlp_puntaje";
             this.Tlp_puntaje.RowCount = 7;
@@ -1433,6 +1435,16 @@
             this.Nud_relacionesinterpersonalesS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Nud_relacionesinterpersonalesS.ValueChanged += new System.EventHandler(this.valorCambiado);
             // 
+            // Btn_insertar
+            // 
+            this.Btn_insertar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Btn_insertar.Location = new System.Drawing.Point(183, 201);
+            this.Btn_insertar.Name = "Btn_insertar";
+            this.Btn_insertar.Size = new System.Drawing.Size(84, 32);
+            this.Btn_insertar.TabIndex = 26;
+            this.Btn_insertar.Text = "Insertar";
+            this.Btn_insertar.UseVisualStyleBackColor = true;
+            // 
             // Frm_DesempenioEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1596,6 +1608,7 @@
         private System.Windows.Forms.NumericUpDown Nud_relacionesinterpersonalesME;
         private System.Windows.Forms.NumericUpDown Nud_relacionesinterpersonalesS;
         private System.Windows.Forms.TextBox Txt_fechaEvaluacion;
+        private System.Windows.Forms.Button Btn_insertar;
     }
 }
 
