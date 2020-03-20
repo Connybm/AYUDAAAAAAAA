@@ -27,3 +27,13 @@ C:\Users\Conny\Downloads\ElBienestar-Didactico-Conny-Maria\Desempeño\Desempeño
 \\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\obj\Debug\Desempeño.csproj.CoreCompileInputs.cache
 \\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\obj\Debug\Desempeño.exe
 \\Mac\Home\Downloads\AYUDAAAAAAAA-master\Desempeño\Desempeño\obj\Debug\Desempeño.pdb
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\bin\Debug\Desempeño.exe.config
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\bin\Debug\Desempeño.exe
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\bin\Debug\Desempeño.pdb
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\obj\Debug\Desempeño.csprojAssemblyReference.cache
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\obj\Debug\Desempeño.Frm_DesempenioEmpleados.resources
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\obj\Debug\Desempeño.Properties.Resources.resources
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\obj\Debug\Desempeño.csproj.GenerateResource.cache
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\obj\Debug\Desempeño.csproj.CoreCompileInputs.cache
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\obj\Debug\Desempeño.exe
+C:\Users\Conny\Documents\Carrera U\Ingenieria\9. Noveno Semestre\Ingenieria de Software\AYUDAAAAAAAA\Desempeño\Desempeño\obj\Debug\Desempeño.pdb

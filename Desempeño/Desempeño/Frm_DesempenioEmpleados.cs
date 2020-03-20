@@ -37,90 +37,6 @@ namespace Desempeño
             this.Dispose();
         }
 
-        public int total;
-        private void Txt_totalPT_TextChanged(object sender, EventArgs e)
-        {
-            total = 5 * 20;
-            Txt_totalPT.Text = total.ToString();
-        }
-
-        public int PTMDE;
-        private void Txt_PTMDE_TextChanged(object sender, EventArgs e)
-        {
-            PTMDE = (total / 5) * 0 + 0;
-            Txt_PTMDE.Text = PTMDE.ToString();
-        }
-
-        public int PTDE;
-        private void Txt_PTDE_TextChanged(object sender, EventArgs e)
-        {
-            PTDE = (total / 5) * 1 + 1;
-            Txt_PTDE.Text = PTDE.ToString();
-        }
-
-        public int PTAE;
-        private void Txt_PTAE_TextChanged(object sender, EventArgs e)
-        {
-            PTAE = (total / 5) * 2 + 1;
-            Txt_PTAE.Text = PTAE.ToString();
-        }
-
-        public int PTME;
-        private void Txt_PTME_TextChanged(object sender, EventArgs e)
-        {
-            PTME = (total / 5) * 3 + 1;
-            Txt_PTME.Text = PTME.ToString();
-        }
-
-        public int PTS;
-        private void Txt_PTS_TextChanged(object sender, EventArgs e)
-        {
-            PTS = (total / 5) * 4 + 1;
-            Txt_PTS.Text = PTS.ToString();
-        }
-
-        public int totalCategoria;
-        private void Txt_totalcategoria_TextChanged(object sender, EventArgs e)
-        {
-            totalCategoria = 19 + 1;
-            Txt_totalcategoria.Text = totalCategoria.ToString();
-        }
-
-        public int PCMDE;
-        private void Txt_PCMDE_TextChanged(object sender, EventArgs e)
-        {
-            PCMDE = 0 + 1;
-            Txt_PCMDE.Text = PCMDE.ToString();
-        }
-
-        public int PCDE;
-        private void Txt_PCDE_TextChanged(object sender, EventArgs e)
-        {
-            PCDE = PCMDE + 1;
-            Txt_PCDE.Text = PCDE.ToString();
-        }
-
-        public int PCAE;
-        private void Txt_PCAE_TextChanged(object sender, EventArgs e)
-        {
-            PCAE = PCDE + 1;
-            Txt_PCAE.Text = PCAE.ToString();
-        }
-
-        public int PCME;
-        private void Txt_PCME_TextChanged(object sender, EventArgs e)
-        {
-            PCME = PCAE + 1;
-            Txt_PCME.Text = PCME.ToString();
-        }
-
-        public int PCS;
-        private void Txt_PCS_TextChanged(object sender, EventArgs e)
-        {
-            PCS = PCME + 1;
-            Txt_PCS.Text = PCS.ToString();
-        }
-
         decimal TotProductividad = 0;
 
         decimal prodMDE;
@@ -157,7 +73,6 @@ namespace Desempeño
                 Nud_productividadME.Value = prodME;
                 Nud_productividadS.Value = prodS;
                 Nud_productividadMDE.Value = prodMDE;
-
             }
         }
 
@@ -171,11 +86,8 @@ namespace Desempeño
 
         public void regularEficiencia()
         {
-            TotEficiencia = Nud_eficienciaDE.Value +
-                    Nud_eficienciaAE.Value +
-                    Nud_eficienciaME.Value +
-                    Nud_eficienciaS.Value +
-                    Nud_eficienciaMDE.Value;
+            TotEficiencia = Nud_eficienciaDE.Value + Nud_eficienciaAE.Value + Nud_eficienciaME.Value +
+                    Nud_eficienciaS.Value + Nud_eficienciaMDE.Value;
 
             if (TotEficiencia == 3)
             {
@@ -197,15 +109,189 @@ namespace Desempeño
                 Nud_eficienciaME.Value = efiME;
                 Nud_eficienciaS.Value = efiS;
                 Nud_eficienciaMDE.Value = efiMDE;
-
             }
         }
 
-        private void Nud_productividadAE_ValueChanged(object sender, EventArgs e)
-        {
-         regularProductividad();
-            sumaTC();
+        decimal TotOrganizacion = 0;
 
+        decimal orgMDE;
+        decimal orgDE;
+        decimal orgAE;
+        decimal orgME;
+        decimal orgS;
+
+        public void regularOrganizacion()
+        {
+            TotOrganizacion = Nud_organizacionDE.Value + Nud_organizacionAE.Value + Nud_organizacionME.Value +
+                    Nud_organizacionS.Value + Nud_organizacionMDE.Value;
+
+            if (TotOrganizacion == 3)
+            {
+                // guardar datos actuales
+                orgDE = Nud_organizacionDE.Value;
+                orgAE = Nud_organizacionAE.Value;
+                orgME = Nud_organizacionME.Value;
+                orgS = Nud_organizacionS.Value;
+                orgMDE = Nud_organizacionMDE.Value;
+            }
+            else if (TotOrganizacion < 3)
+            {
+
+            }
+            else if (TotOrganizacion > 3)
+            {
+                Nud_organizacionDE.Value = orgDE;
+                Nud_organizacionAE.Value = orgAE;
+                Nud_organizacionME.Value = orgME;
+                Nud_organizacionS.Value = orgS;
+                Nud_organizacionMDE.Value = orgMDE;
+            }
+        }
+
+        decimal TotAprendizajeyDesarrollo = 0;
+
+        decimal aydMDE;
+        decimal aydDE;
+        decimal aydAE;
+        decimal aydME;
+        decimal aydS;
+
+        public void regularAprendizajeyDesarrollo()
+        {
+            TotAprendizajeyDesarrollo = Nud_aprendizajeydesarrolloDE.Value + Nud_aprendizajeydesarrolloAE.Value +
+                    Nud_aprendizajeydesarrolloME.Value + Nud_aprendizajeydesarrolloS.Value +
+                    Nud_aprendizajeydesarrolloMDE.Value;
+
+            if (TotAprendizajeyDesarrollo == 3)
+            {
+                // guardar datos actuales
+                aydDE = Nud_aprendizajeydesarrolloDE.Value;
+                aydAE = Nud_aprendizajeydesarrolloAE.Value;
+                aydME = Nud_aprendizajeydesarrolloME.Value;
+                aydS = Nud_aprendizajeydesarrolloS.Value;
+                aydMDE = Nud_aprendizajeydesarrolloMDE.Value;
+            }
+            else if (TotAprendizajeyDesarrollo < 3)
+            {
+
+            }
+            else if (TotAprendizajeyDesarrollo > 3)
+            {
+                Nud_aprendizajeydesarrolloDE.Value = aydDE;
+                Nud_aprendizajeydesarrolloAE.Value = aydAE;
+                Nud_aprendizajeydesarrolloME.Value = aydME;
+                Nud_aprendizajeydesarrolloS.Value = aydS;
+                Nud_aprendizajeydesarrolloMDE.Value = aydMDE;
+            }
+        }
+
+        decimal TotComunicacion = 0;
+
+        decimal comuMDE;
+        decimal comuDE;
+        decimal comuAE;
+        decimal comuME;
+        decimal comuS;
+
+        public void regularComunicacion()
+        {
+            TotComunicacion = Nud_comunicacionDE.Value + Nud_comunicacionAE.Value + Nud_comunicacionME.Value +
+                    Nud_comunicacionS.Value + Nud_comunicacionMDE.Value;
+
+            if (TotComunicacion == 3)
+            {
+                // guardar datos actuales
+                comuDE = Nud_comunicacionDE.Value;
+                comuAE = Nud_comunicacionAE.Value;
+                comuME = Nud_comunicacionME.Value;
+                comuS = Nud_comunicacionS.Value;
+                comuMDE = Nud_comunicacionMDE.Value;
+            }
+            else if (TotComunicacion < 3)
+            {
+
+            }
+            else if (TotComunicacion > 3)
+            {
+                Nud_comunicacionDE.Value = comuDE;
+                Nud_comunicacionAE.Value = comuAE;
+                Nud_comunicacionME.Value = comuME;
+                Nud_comunicacionS.Value = comuS;
+                Nud_comunicacionMDE.Value = comuMDE;
+            }
+        }
+
+        decimal TotRelacionesInterpersonales = 0;
+
+        decimal reinMDE;
+        decimal reinDE;
+        decimal reinAE;
+        decimal reinME;
+        decimal reinS;
+
+        public void regularRelacionesInterpersonales()
+        {
+            TotRelacionesInterpersonales = Nud_relacionesinterpersonalesDE.Value + Nud_relacionesinterpersonalesAE.Value +
+                    Nud_relacionesinterpersonalesME.Value + Nud_relacionesinterpersonalesS.Value +
+                    Nud_relacionesinterpersonalesMDE.Value;
+
+            if (TotRelacionesInterpersonales == 3)
+            {
+                // guardar datos actuales
+                reinDE = Nud_relacionesinterpersonalesDE.Value;
+                reinAE = Nud_relacionesinterpersonalesAE.Value;
+                reinME = Nud_relacionesinterpersonalesME.Value;
+                reinS = Nud_relacionesinterpersonalesS.Value;
+                reinMDE = Nud_relacionesinterpersonalesMDE.Value;
+            }
+            else if (TotRelacionesInterpersonales < 3)
+            {
+
+            }
+            else if (TotRelacionesInterpersonales > 3)
+            {
+                Nud_relacionesinterpersonalesDE.Value = reinDE;
+                Nud_relacionesinterpersonalesAE.Value = reinAE;
+                Nud_relacionesinterpersonalesME.Value = reinME;
+                Nud_relacionesinterpersonalesS.Value = reinS;
+                Nud_relacionesinterpersonalesMDE.Value = reinMDE;
+            }
+        }
+
+        decimal TotAsistencia = 0;
+
+        decimal asisMDE;
+        decimal asisDE;
+        decimal asisAE;
+        decimal asisME;
+        decimal asisS;
+
+        public void regularAsistencia()
+        {
+            TotAsistencia = Nud_asistenciaDE.Value + Nud_asistenciaAE.Value + Nud_asistenciaME.Value +
+                    Nud_asistenciaS.Value + Nud_asistenciaMDE.Value;
+
+            if (TotAsistencia == 2)
+            {
+                // guardar datos actuales
+                asisDE = Nud_asistenciaDE.Value;
+                asisAE = Nud_asistenciaAE.Value;
+                asisME = Nud_asistenciaME.Value;
+                asisS = Nud_asistenciaS.Value;
+                asisMDE = Nud_asistenciaMDE.Value;
+            }
+            else if (TotAsistencia < 2)
+            {
+
+            }
+            else if (TotAsistencia > 2)
+            {
+                Nud_asistenciaDE.Value = asisDE;
+                Nud_asistenciaAE.Value = asisAE;
+                Nud_asistenciaME.Value = asisME;
+                Nud_asistenciaS.Value = asisS;
+                Nud_asistenciaMDE.Value = asisMDE;
+            }
         }
 
         public void sumaTC()
@@ -215,18 +301,68 @@ namespace Desempeño
                 Nud_asistenciaMDE.Value;
             Txt_TCMDE.Text = sumaMDE.ToString();
 
-
             decimal sumaDE = Nud_productividadDE.Value + Nud_eficienciaDE.Value + Nud_organizacionDE.Value +
                 Nud_aprendizajeydesarrolloDE.Value + Nud_comunicacionDE.Value + Nud_relacionesinterpersonalesDE.Value + 
                 Nud_asistenciaDE.Value;
             Txt_TCDE.Text = sumaDE.ToString();
+
+            decimal sumaAE = Nud_productividadAE.Value + Nud_eficienciaAE.Value + Nud_organizacionAE.Value +
+                Nud_aprendizajeydesarrolloAE.Value + Nud_comunicacionAE.Value + Nud_relacionesinterpersonalesAE.Value +
+                Nud_asistenciaAE.Value;
+            Txt_TCAE.Text = sumaAE.ToString();
+
+            decimal sumaME = Nud_productividadME.Value + Nud_eficienciaME.Value + Nud_organizacionME.Value +
+                Nud_aprendizajeydesarrolloME.Value + Nud_comunicacionME.Value + Nud_relacionesinterpersonalesME.Value +
+                Nud_asistenciaME.Value;
+            Txt_TCME.Text = sumaME.ToString();
+
+            decimal sumaS = Nud_productividadS.Value + Nud_eficienciaS.Value + Nud_organizacionS.Value +
+                Nud_aprendizajeydesarrolloS.Value + Nud_comunicacionS.Value + Nud_relacionesinterpersonalesS.Value +
+                Nud_asistenciaS.Value;
+            Txt_TCS.Text = sumaS.ToString();
         }
         
         private void valorCambiado(object sender, EventArgs e)
         {
             regularProductividad();
             regularEficiencia();
+            regularOrganizacion();
+            regularAprendizajeyDesarrollo();
+            regularComunicacion();
+            regularRelacionesInterpersonales();
+            regularAsistencia();
             sumaTC();
+        }
+
+        decimal Totalempleado;
+        private void Txt_empleadosTotal_TextChanged(object sender, EventArgs e)
+        {
+            //Totalempleado = (Txt_PCMDE * Txt_TCMDE) + () +;
+            Txt_empleadosTotal.Text = Totalempleado.ToString();
+        }
+
+        private void Txt_empleadosDesempeño_TextChanged(object sender, EventArgs e)
+        {
+            if ((Totalempleado >= 0) && (Totalempleado <= 21))
+            {
+                Txt_empleadosDesempeño.Text = "Muy debajo de las Expectativas";
+            }
+            else if ((Totalempleado >= 22) && (Totalempleado <= 40))
+            {
+                Txt_empleadosDesempeño.Text = "Debajo de las Expectativas";
+            }
+            else if ((Totalempleado >= 41) && (Totalempleado <= 60))
+            {
+                Txt_empleadosDesempeño.Text = "Alcanza Expectativas";
+            }
+            else if ((Totalempleado >= 61) && (Totalempleado <= 80))
+            {
+                Txt_empleadosDesempeño.Text = "Mejora Expectativas";
+            }
+            else if ((Totalempleado >= 81) && (Totalempleado <= 100))
+            {
+                Txt_empleadosDesempeño.Text = "Sobresaliente";
+            }
         }
     }
 }
