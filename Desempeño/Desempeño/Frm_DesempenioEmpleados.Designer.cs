@@ -594,6 +594,7 @@
             // 
             // Txt_fechaEvaluacion
             // 
+            this.Txt_fechaEvaluacion.Enabled = false;
             this.Txt_fechaEvaluacion.Location = new System.Drawing.Point(14, 98);
             this.Txt_fechaEvaluacion.Name = "Txt_fechaEvaluacion";
             this.Txt_fechaEvaluacion.Size = new System.Drawing.Size(197, 20);

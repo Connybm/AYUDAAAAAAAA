@@ -337,7 +337,22 @@ namespace Desempeño
         decimal Totalempleado;
         private void Txt_empleadosTotal_TextChanged(object sender, EventArgs e)
         {
-            //Totalempleado = (Txt_PCMDE * Txt_TCMDE) + () +;
+            //PC
+            decimal Pcmde = decimal.Parse(Txt_PCMDE.Text);
+            decimal Pcde = decimal.Parse(Txt_PCDE.Text);
+            decimal Pcae = decimal.Parse(Txt_PCAE.Text);
+            decimal Pcme = decimal.Parse(Txt_PCME.Text);
+            decimal Pcs = decimal.Parse(Txt_PCS.Text);
+
+            //TC
+            decimal Tcmde = decimal.Parse(Txt_TCMDE.Text);
+            decimal Tcde = decimal.Parse(Txt_TCDE.Text);
+            decimal Tcae = decimal.Parse(Txt_TCAE.Text);
+            decimal Tcme = decimal.Parse(Txt_TCME.Text);
+            decimal Tcs = decimal.Parse(Txt_TCS.Text);
+
+            //Total
+            Totalempleado = (Pcmde * Tcmde) + (Pcde * Tcde) + (Pcae * Tcae) + (Pcme * Tcme) + (Pcs * Tcs);
             Txt_empleadosTotal.Text = Totalempleado.ToString();
         }
 
