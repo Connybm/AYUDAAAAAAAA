@@ -617,7 +617,7 @@
             this.Txt_empleadosTotal.Name = "Txt_empleadosTotal";
             this.Txt_empleadosTotal.Size = new System.Drawing.Size(322, 20);
             this.Txt_empleadosTotal.TabIndex = 3;
-            this.Txt_empleadosTotal.TextChanged += new System.EventHandler(this.Txt_empleadosTotal_TextChanged);
+            this.Txt_empleadosTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Txt_jefeGerente
             // 
@@ -645,7 +645,7 @@
             this.Txt_empleadosDesempeño.Name = "Txt_empleadosDesempeño";
             this.Txt_empleadosDesempeño.Size = new System.Drawing.Size(322, 20);
             this.Txt_empleadosDesempeño.TabIndex = 2;
-            this.Txt_empleadosDesempeño.TextChanged += new System.EventHandler(this.Txt_empleadosDesempeño_TextChanged);
+            this.Txt_empleadosDesempeño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Txt_fechaIngreso
             // 

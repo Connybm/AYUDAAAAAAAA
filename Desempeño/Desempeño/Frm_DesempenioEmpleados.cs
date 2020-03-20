@@ -332,10 +332,13 @@ namespace Desempeño
             regularRelacionesInterpersonales();
             regularAsistencia();
             sumaTC();
+            totalEmpleado();
+            empleadoDesempeño();
         }
 
         decimal Totalempleado;
-        private void Txt_empleadosTotal_TextChanged(object sender, EventArgs e)
+
+        public void totalEmpleado()
         {
             //PC
             decimal Pcmde = decimal.Parse(Txt_PCMDE.Text);
@@ -356,7 +359,7 @@ namespace Desempeño
             Txt_empleadosTotal.Text = Totalempleado.ToString();
         }
 
-        private void Txt_empleadosDesempeño_TextChanged(object sender, EventArgs e)
+        public void empleadoDesempeño()
         {
             if ((Totalempleado >= 0) && (Totalempleado <= 21))
             {
